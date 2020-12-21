@@ -1,0 +1,23 @@
+{
+    "title": "Helm",
+    "description": "Helm",
+    "logo": "_images/SalesStack.png",
+    "enabled": true,
+    "category_label": [
+      "helm"
+    ],
+    "document": "data-logging-stack",
+    "stack_id": "helm-sample",
+    "type": "helm",
+    "categories": [
+      "Helm-chart"
+    ],
+    "is_certified": true,
+    "has_support": true,
+    "has_dataset": false,
+    "has_api": false,
+    "git_url": "https://github.com/operator-playground-io/helm-sample.git",
+    "git_commit": "1095792ff8849eff7d95abdc7b1b44afb756c46b",
+    "installTime": "5 minutes",
+    "isStacksSaved": true
+  }

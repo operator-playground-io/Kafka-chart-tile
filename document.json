@@ -1,0 +1,35 @@
+{
+    "name": "Helm",
+    "description": "Helm",
+    "logo": "_images/SalesStack.png",
+    "has_supporting_content": true,
+    "stack_id": "helm-sample",
+    "type": "helm",
+    "categories": ["Helm-chart"],
+    "platform": "Kubernetes",
+    "cover": "cover.md",
+    "meta": {
+      "Type":[
+           "helm"
+        ],
+      "Install time": ["5 minutes"]
+    },
+    "commands": [
+      {
+        "description": "Install Helm",
+        "exec": "helm repo add bitnami https://charts.bitnami.com/bitnami"
+      },
+      {
+        "description": "Install Helm-2",
+        "exec": "helm install my-release bitnami/kafka"
+      }
+    ],
+    "display": [
+      {
+        "name": "Developer Dashboard",
+        "url": "##DNS.host##/codeserver",
+        "enabled": true
+      }
+    ]
+  }
+  
