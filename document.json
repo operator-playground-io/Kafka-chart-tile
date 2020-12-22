@@ -1,12 +1,13 @@
 {
-    "name": "Helm",
-    "description": "Helm",
+    "name": "Kafka",
+    "description": "Kafka",
     "logo": "_images/SalesStack.png",
     "has_supporting_content": true,
     "stack_id": "kafka-bitnami-chart",
     "type": "Helm",
     "categories": [
-        "Helm-chart"
+        "Helm-chart",
+        "Streaming & Messaging"
     ],
     "platform": "Kubernetes",
     "cover": "cover.md",
@@ -19,7 +20,7 @@
         ]
     },
     "deployment_information": {
-        "Operator Project": "NA",
+        "Project": "NA",
         "Deployment Namespace": "helm-kafka"
     },
     "commands": [
