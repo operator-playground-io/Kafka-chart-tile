@@ -4,11 +4,11 @@
     "logo": "_images/SalesStack.png",
     "enabled": true,
     "category_label": [
-      "helm"
+      "Helm"
     ],
-    "document": "data-logging-stack",
-    "stack_id": "helm-sample",
-    "type": "helm",
+    "document": "",
+    "stack_id": "kafka-bitnami-chart",
+    "type": "Helm",
     "categories": [
       "Helm-chart"
     ],

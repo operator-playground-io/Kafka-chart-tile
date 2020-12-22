@@ -1,1 +1,1 @@
-#Cover content
+Cover

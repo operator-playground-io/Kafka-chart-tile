@@ -3,24 +3,24 @@
     "description": "Helm",
     "logo": "_images/SalesStack.png",
     "has_supporting_content": true,
-    "stack_id": "helm-sample",
-    "type": "helm",
+    "stack_id": "kafka-bitnami-chart",
+    "type": "Helm",
     "categories": ["Helm-chart"],
     "platform": "Kubernetes",
     "cover": "cover.md",
     "meta": {
       "Type":[
-           "helm"
+           "Helm"
         ],
       "Install time": ["5 minutes"]
     },
     "commands": [
       {
-        "description": "Install Helm",
+        "description": "Add the bitnami helm repository",
         "exec": "helm repo add bitnami https://charts.bitnami.com/bitnami"
       },
       {
-        "description": "Install Helm-2",
+        "description": "Install Kafka Helm chart",
         "exec": "helm install my-release bitnami/kafka"
       }
     ],
