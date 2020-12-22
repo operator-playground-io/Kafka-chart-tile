@@ -6,7 +6,6 @@
     "stack_id": "kafka-bitnami-chart",
     "type": "Helm",
     "categories": [
-        "Helm-chart",
         "Streaming & Messaging"
     ],
     "platform": "Kubernetes",
