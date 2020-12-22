@@ -5,31 +5,38 @@
     "has_supporting_content": true,
     "stack_id": "kafka-bitnami-chart",
     "type": "Helm",
-    "categories": ["Helm-chart"],
+    "categories": [
+        "Helm-chart"
+    ],
     "platform": "Kubernetes",
     "cover": "cover.md",
     "meta": {
-      "Type":[
-           "Helm"
+        "Type": [
+            "Helm"
         ],
-      "Install time": ["5 minutes"]
+        "Install time": [
+            "5 minutes"
+        ]
+    },
+    "deployment_information": {
+        "Operator Project": "NA",
+        "Deployment Namespace": "helm-kafka"
     },
     "commands": [
-      {
-        "description": "Add the bitnami helm repository",
-        "exec": "helm repo add bitnami https://charts.bitnami.com/bitnami"
-      },
-      {
-        "description": "Install Kafka Helm chart",
-        "exec": "helm install my-release bitnami/kafka"
-      }
+        {
+            "description": "Add the bitnami helm repository",
+            "exec": "helm repo add bitnami https://charts.bitnami.com/bitnami"
+        },
+        {
+            "description": "Install Kafka Helm chart",
+            "exec": "helm install my-release bitnami/kafka"
+        }
     ],
     "display": [
-      {
-        "name": "Developer Dashboard",
-        "url": "##DNS.host##/codeserver",
-        "enabled": true
-      }
+        {
+            "name": "Developer Dashboard",
+            "url": "##DNS.host##/codeserver",
+            "enabled": true
+        }
     ]
-  }
-  
+}
