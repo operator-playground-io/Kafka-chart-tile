@@ -1,7 +1,7 @@
 {
     "name": "Kafka",
     "description": "Kafka",
-    "logo": "_images/SalesStack.png",
+    "logo": "_images/Custom.png",
     "has_supporting_content": true,
     "stack_id": "kafka-bitnami-chart",
     "type": "Helm",
