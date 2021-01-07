@@ -42,7 +42,7 @@
     },
     {
       "description": "Install the chart",
-      "exec": "helm install kafka bitnami/kafka -n kafka"
+      "exec": "helm install my-release bitnami/kafka -n kafka"
     }
   ],
   "display": [
