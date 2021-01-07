@@ -1,45 +1,55 @@
 {
-    "name": "Kafka",
-    "description": "Kafka",
-    "logo": "_images/Custom.png",
-    "has_supporting_content": true,
-    "stack_id": "kafka-bitnami-chart",
-    "type": "Helm",
-    "categories": [
-        "Streaming & Messaging"
-    ],
-    "platform": "Kubernetes",
-    "cover": "cover.md",
-    "meta": {
+  "name": "Kafka Helm Chart",
+  "description": "Kafka Bitnami Helm Chart",
+  "logo": "_images/Custom.png",
+  "has_supporting_content": true,
+  "stack_id": "kafka-bitnami-chart",
+  "type": "Helm",
+  "categories": ["Streaming & Messaging"],
+  "platform": "Kubernetes",
+  "cover": "cover.md",
+  "meta": {
         "Type": [
             "Helm"
         ],
         "Install time": [
-            "5 minutes"
+            "10 minutes"
         ],
         "Categories": [
             "Streaming & Messaging"
         ]
+  },
+"deployment_information": {
+  "Project": "NA",
+  "Deployment Namespace": "kafka"
+},
+ "commands": [
+    {
+      "description": "Create Namespace",
+      "exec": "kubectl create namespace kafka"
     },
-    "deployment_information": {
-        "Project": "NA",
-        "Deployment Namespace": "kafka"
+   {
+      "description": "Create hostpath for Zookeeper and Kafka PVs",
+      "exec": "sudo mkdir -p /bitnami/zookeeper/data && sudo chown -R 1001:1001 /bitnami/zookeeper/data && sudo mkdir -p /bitnami/kafka/data && sudo chown -R 1001:1001 /bitnami/kafka/data" 
     },
-    "commands": [
-        {
-            "description": "Add the bitnami helm repository",
-            "exec": "helm repo add bitnami https://charts.bitnami.com/bitnami"
-        },
-        {
-            "description": "Install Kafka Helm chart",
-            "exec": "helm install my-release bitnami/kafka"
-        }
-    ],
-    "display": [
-        {
-            "name": "Developer Dashboard",
-            "url": "##DNS.host##/codeserver",
-            "enabled": true
-        }
-    ]
+    {
+      "description": "Clone and Prepare ",
+      "exec": "cd /home/student/projects && git clone https://github.com/operator-playground-io/Kafka-chart-tile.git && cd Kafka-chart-tile && kubectl create -f pv-kafka.yaml && kubectl create -f pv-zookeeper.yaml"
+    },
+    {
+      "description": "Add Bitnami Repo",
+      "exec": "helm repo add bitnami https://charts.bitnami.com/bitnami"
+    },
+    {
+      "description": "Install the chart",
+      "exec": "helm install kafka bitnami/kafka -n kafka"
+    }
+  ],
+  "display": [
+    {
+      "name": "Developer Dashboard",
+      "url": "##DNS.host##/codeserver",
+      "enabled": true
+    }
+  ]
 }
