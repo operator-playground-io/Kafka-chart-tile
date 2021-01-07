@@ -23,7 +23,7 @@
     },
     "deployment_information": {
         "Project": "NA",
-        "Deployment Namespace": "helm-kafka"
+        "Deployment Namespace": "kafka"
     },
     "commands": [
         {
