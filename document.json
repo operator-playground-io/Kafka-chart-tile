@@ -30,7 +30,7 @@
     },
    {
       "description": "Create hostpath for Zookeeper and Kafka PVs",
-      "exec": "sudo mkdir -p /bitnami/zookeeper/data && sudo chown -R 1001:1001 /bitnami/zookeeper/data && sudo mkdir -p /bitnami/kafka/data && sudo chown -R 1001:1001 /bitnami/kafka/" 
+      "exec": "sudo mkdir -p /bitnami/zookeeper/data && sudo mkdir -p /bitnami/kafka/data && sudo chmod -R 777 /bitnami" 
     },
     {
       "description": "Clone and Prepare ",
