@@ -12,14 +12,14 @@
       },
       {
          "description":"How to deploy a test client that will execute scripts against the Kafka cluster",
-         "duration":"5 min",
+         "duration":"10 min",
          "tutorial_name":"create-test-client.md",
          "title":"How to Deploy Test Client for Kafka"
       },
 
       {
          "description":" Detail description of Configuration Parameters of Kafka Helm Chart",
-         "duration":"30 min",
+         "duration":"5 min",
          "tutorial_name":"configuration-parameters-of-kafka-helm-chart.md",
          "title":"Configuration Parameters of Kafka Helm Chart Tutorial"
       },
