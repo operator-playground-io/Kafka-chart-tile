@@ -1,0 +1,47 @@
+{
+   "name":"Kafka Helm Chart Tutorial",
+   "appLayout":"accordion",
+   "appTheme":"g90",
+   "footer":"footer.md",
+   "tutorials":[
+      {
+         "description":" How to verify chart is installed successfully.",
+         "duration":"5 min",
+         "tutorial_name":"verify-kafka-chart-installation.md",
+         "title":"Verify Chart Installation is successful"
+      },
+      {
+         "description":"How to deploy a test client that will execute scripts against the Kafka cluster",
+         "duration":"5 min",
+         "tutorial_name":"create-test-client.md",
+         "title":"How to Deploy Test Client for Kafka"
+      },
+
+      {
+         "description":" Detail description of Configuration Parameters of Kafka Helm Chart",
+         "duration":"30 min",
+         "tutorial_name":"configuration-parameters-of-kafka-helm-chart.md",
+         "title":"Configuration Parameters of Kafka Helm Chart Tutorial"
+      },
+      {
+         "description":" How to Upgrade and Rollback kafka helm chart tutorial",
+         "duration":"15 min",
+         "tutorial_name":"upgrading-and-rollback-kafka.md",
+         "title":"Upgrade and Rollback Kafka Helm Chart tutorial"
+      },
+      {
+         "description":" How to uninstall Helm Chart",
+         "duration":"5 min",
+         "tutorial_name":"uninstall-helm-chart.md",
+         "title":"Uninstall Kafka Helm Chart"
+      }
+      
+   ],
+   "usefulLinks":[
+      {
+         "title":"Kafka Helm Chart",
+         "description":"Kafka Bitnami Helm Chart",
+         "url":"https://bitnami.com/stack/kafka/helm"
+      }
+   ]
+}

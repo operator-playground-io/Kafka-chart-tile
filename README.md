@@ -1,1 +1,1 @@
-# helm-sample
+# Kafka Helm Chart
