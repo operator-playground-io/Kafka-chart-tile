@@ -66,7 +66,7 @@ Now to send and receive the messages you will need to have two terminals. Let's 
 
 ### Get Multiple Terminals
 
-**Step 1 :**Click on the `Developer Dashboard` tab on top.
+**Step 1 :** Click on the `Developer Dashboard` tab on top.
 
 ![](_images/developer-dashboard.png)
 
