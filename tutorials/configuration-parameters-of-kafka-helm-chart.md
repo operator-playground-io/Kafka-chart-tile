@@ -1,3 +1,9 @@
+---
+title: Configuration Parameters of Kafka Helm Chart
+description: This tutorial explains about Configuration Parameters
+---
+
+
 ### Configuration Parameters of Kafka Helm Chart
 
 The Kafka Helm Chart can be customized by specifying configurable Parameters while installing the chart.
