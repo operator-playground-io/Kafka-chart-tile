@@ -150,7 +150,7 @@ my-release      kafka           2               2021-01-09 12:45:13.889656747 -0
 You have successfully upgraded your Kafka to the latest version of the Kafka chart.
 
 
-# Rolling Back a Release
+### Rolling Back a Release
 
 Each time you upgrade a release, a new revision of that release is created by Helm. A revision sets a fixed checkpoint to where you can come back if things don’t work as expected. 
 If something goes wrong during the upgrade process, you can always rollback to a previous revision of a given Helm release with the helm rollback command.
