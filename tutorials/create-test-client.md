@@ -100,6 +100,8 @@ It will open a Visual Studio Code Editor.
 unset DEBUG
 ```
 Follow the below steps in parallel terminals.
+
+
 **Terminal 1:**
 
 Now copy and execute the below command to create a producer that will publish messages to the topic.
