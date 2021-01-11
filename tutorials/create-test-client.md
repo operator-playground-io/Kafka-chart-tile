@@ -64,7 +64,7 @@ Here you need to use the correct hostname for zookeeper cluster and the topic co
 
 Now to send and receive the messages you will need to have two terminals. Let's get that using our`Developer Dashboard` tab. 
 
-# Get Multiple Terminals
+### Get Multiple Terminals
 
 **Step 1 :**Click on the `Developer Dashboard` tab on top.
 
@@ -92,19 +92,19 @@ It will open a Visual Studio Code Editor.
 
 ![](_images/terminal-switch.png)
 
-# Send and Receive Messages
+### Send and Receive Messages
 
-**NOTE :**  Execute below command in both terminals for disabling network logs on Kubernetes when running `kubectl exec` commands.
+**NOTE :**  Copy and execute below command in both terminals for disabling network logs on Kubernetes when running `kubectl exec` commands.
 
-```execute
+```
 unset DEBUG
 ```
-
+Follow the below steps in parallel terminals.
 **Terminal 1:**
 
-Now execute the below command to create a producer that will publish messages to the topic.
+Now copy and execute the below command to create a producer that will publish messages to the topic.
 
-```execute
+```
 kubectl -n kafka exec -ti testclient -- ./bin/kafka-console-producer.sh --broker-list my-release-kafka:9092 --topic messages
 ```
 
@@ -114,15 +114,15 @@ You can try sending some messages like below:
 
 Execute below command to exit :
 
-```execute
+```
 exit
 ```
 
 **Terminal 2:**
 
-In a separate terminal, execute the below command to open a consumer session so that you can see the messages as you send it.
+In a separate terminal,copy and execute the below command to open a consumer session so that you can see the messages as you send it.
 
-```execute
+```
 kubectl -n kafka exec -ti testclient -- ./bin/kafka-console-consumer.sh --bootstrap-server my-release-kafka:9092 --topic messages
 ```
 
@@ -132,7 +132,7 @@ You will get the messages sent :
 
 Execute below command to exit :
 
-```execute
+```
 exit
 ```
 
