@@ -42,7 +42,7 @@ Output:
 Status: UNINSTALLED
 ```
 
-# Cleanup other resources
+### Cleanup other resources
 
 To delete the `testclient` Pod, execute the below command:
 
