@@ -114,11 +114,6 @@ You can try sending some messages like below:
 
 ![](_images/sender.png)
 
-Execute below command to exit :
-
-```
-exit
-```
 
 **Terminal 2:**
 
@@ -131,11 +126,5 @@ kubectl -n kafka exec -ti testclient -- ./bin/kafka-console-consumer.sh --bootst
 You will get the messages sent :
 
 ![](_images/receiver.png)
-
-Execute below command to exit :
-
-```
-exit
-```
 
 Here you Go !! Your Kafka cluster is working correctly.
