@@ -48,7 +48,8 @@ my-release-zookeeper-0   1/1     Running   0          65m
 testclient               1/1     Running   0          56m
 ```
 
-Now using the `testclient`, you will create the first `topic`  “messages”, with one partition and replication factor ‘1’, which you are going to use to post messages:
+Now using the `testclient`, you will create the first `topic` “messages”, with one partition, and replication factor ‘1’. From each partition, multiple consumers can read from a topic in parallel and the replication factor defines how many copies of a topic are maintained across the Kafka cluster.
+You are going to use it to post messages:
 
 ```execute
 kubectl -n kafka exec -it testclient -- ./bin/kafka-topics.sh --zookeeper my-release-zookeeper:2181 --topic messages --create --partitions 1 --replication-factor 1
@@ -94,12 +95,12 @@ It will open a Visual Studio Code Editor.
 
 ### Send and Receive Messages
 
-**NOTE :**  Copy and execute below command in both terminals for disabling network logs on Kubernetes when running `kubectl exec` commands.
+**NOTE :**  Before executing `kubectl` commands, you need to disable network logs on Kubernetes.Copy and execute below command in both terminals:
 
 ```
 unset DEBUG
 ```
-Follow the below steps in parallel terminals.
+Follow the below steps to send message from 'Terminal 1' and to receive message on 'Terminal 2'.
 
 
 **Terminal 1:**
@@ -110,6 +111,17 @@ Now copy and execute the below command to create a producer that will publish me
 kubectl -n kafka exec -ti testclient -- ./bin/kafka-console-producer.sh --broker-list my-release-kafka:9092 --topic messages
 ```
 
+**Terminal 2:**
+
+On second terminal,copy and execute the below command to open a consumer session so that you can receive messages sent from `Terminal 1`.
+
+```
+kubectl -n kafka exec -ti testclient -- ./bin/kafka-console-consumer.sh --bootstrap-server my-release-kafka:9092 --topic messages
+```
+Now you can switch terminals to send and receive messages.
+
+**Terminal 1:**
+
 You can try sending some messages like below:
 
 ![](_images/sender.png)
@@ -117,14 +129,9 @@ You can try sending some messages like below:
 
 **Terminal 2:**
 
-In a separate terminal,copy and execute the below command to open a consumer session so that you can see the messages as you send it.
-
-```
-kubectl -n kafka exec -ti testclient -- ./bin/kafka-console-consumer.sh --bootstrap-server my-release-kafka:9092 --topic messages
-```
-
-You will get the messages sent :
+You will receive the sent messages from `Terminal 1`
 
 ![](_images/receiver.png)
+
 
 Here you Go !! Your Kafka cluster is working correctly.
