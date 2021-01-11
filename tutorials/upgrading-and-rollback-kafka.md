@@ -5,7 +5,7 @@ description: This tutorial explains how to Upgrade and Rollback Kafka helm chart
 
 
 
-# Upgrading Kafka
+### Upgrading Kafka
 
 It is also important to keep Kafka helm chart updated. 
 
