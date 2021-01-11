@@ -1,4 +1,4 @@
-# Configuration Parameters of Kafka Helm Chart
+### Configuration Parameters of Kafka Helm Chart
 
 The following tables lists the configurable parameters of the Kafka chart and their default values per section/component:
 
