@@ -3,7 +3,7 @@ title: How to Uninstall Kafka Helm chart
 description: This tutorial explains how to Uninstall Kafka helm chart
 ---
 
-# Uninstall Kafka Helm Chart
+### Uninstall Kafka Helm Chart
 
 Check your deployed Kafka helm chart:
 
