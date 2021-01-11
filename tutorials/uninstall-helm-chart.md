@@ -39,7 +39,7 @@ helm status my-release -n kafka
 Output:
 
 ```
-Status: UNINSTALLED
+Error: release: not found
 ```
 
 ### Cleanup other resources
