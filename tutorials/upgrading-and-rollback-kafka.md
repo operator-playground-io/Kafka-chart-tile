@@ -156,9 +156,7 @@ Each time you upgrade a release, a new revision of that release is created by He
 If something goes wrong during the upgrade process, you can always rollback to a previous revision of a given Helm release with the helm rollback command.
 
 
-If we want to undo the upgrade and rollback our Kafka release to its previous version, execute following command:
-
-Execute rollback command :
+If you want to undo the upgrade and rollback your Kafka release to its previous version, execute the following rollback command:
 
 ```execute
 helm rollback my-release 1 -n kafka
