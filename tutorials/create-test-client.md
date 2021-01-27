@@ -33,7 +33,7 @@ Execute the command to create the client:
 kubectl -n kafka apply -f testclient.yaml
 ```
 
-Now check the `testclient` pod up and running by executing the below command:
+Now check if the `testclient` pod is up and running by executing the below command:
 
 ```execute
 kubectl get pods -n kafka
