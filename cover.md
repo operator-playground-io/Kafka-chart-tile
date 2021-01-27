@@ -9,7 +9,7 @@ Kafka Bitnami Chart  bootstraps a [Kafka](https://github.com/bitnami/bitnami-doc
 It also packages Zookeeper to manage and coordinate the Kafka cluster.
 
 In this tutorial, we’ll use Helm for setting up Kafka on top of a Kubernetes cluster, in order to create a highly-available streaming platform.
-In addition to leveraging the intrinsic scalability and high availability aspects of Kubernetes, this setup will help keeping Kafka secure by providing simplified upgrade and rollback workflows via Helm. The Kubernetes pods can also easily interact with the Kafka pods within the cluster using the inbuilt Kubernetes service discovery.
+In addition to leveraging the intrinsic scalability and high availability aspects of Kubernetes, this setup will help keeping Kafka secure by providing simplified upgrade and rollback workflows via Helm.
 
 # Prerequisites
 
@@ -39,7 +39,7 @@ Consumers read data by reading messages from the topics to which they subscribe.
 
 **Zookeeper :**
 
-Kafka uses zookeeper to manage service discovery for kafka brokers that form the cluster. zookeeper sends changes of the topology to kafka, so each node in the cluster knows when a new broker joins, a broker dies, a topic was removed or a topic was added, etc. zookeeper provides an in-sync view of kafka cluster configuration.
+Kafka uses zookeeper to manage service discovery for kafka brokers that form the cluster. Zookeeper sends changes of the topology to kafka, so each node in the cluster knows when a new broker joins, a broker dies, a topic was removed or a topic was added, etc. Zookeeper provides an in-sync view of kafka cluster configuration.
 
 **Kafka Topics :**
 
