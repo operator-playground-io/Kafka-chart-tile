@@ -10,6 +10,7 @@ Execute below command to check status of pods and services:
 
 ### Check the pod status
 
+Execute the below command to know status of podss inside the namespace `kafka`:
 
 ```execute
 kubectl get pods --namespace kafka
@@ -35,14 +36,14 @@ Once the `kafka` and `zookeeper`PODs are up and running , and `READY` states are
 
 ### Check all the Kubernetes resources status
 
-You can run the following command to know status of all the deployed resources inside the namespace `kafka`
+You can execute the following command to know status of all the deployed resources inside the namespace `kafka`:
 
 
 ```execute
 kubectl get all --namespace kafka
 ```
 
-All the deployment and service status should be Running.
+All the pod `STATUS` should be `Running` and `READY` states should be `1/1`.
 
 ```
 NAME                         READY   STATUS    RESTARTS   AGE
