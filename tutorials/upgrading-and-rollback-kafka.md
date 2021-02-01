@@ -7,9 +7,11 @@ description: This tutorial explains how to Upgrade and Rollback Kafka helm chart
 
 ### Upgrading Kafka
 
-It is also important to keep Kafka helm chart updated. 
+It is also important to keep Kafka Helm Chart updated. 
 
-To Upgrade kafka helm chart,please execute following steps:
+**NOTE: At the time of creation of this tutorial the Kafka chart version is kafka-12.5.0. This may change with updates**
+
+To Upgrade Kafka Helm Chart,please execute following steps:
 
 **Step 1:** To list all of your current releases in namespace "kafka", run the following command :
 
