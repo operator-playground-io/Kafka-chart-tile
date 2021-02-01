@@ -18,7 +18,7 @@ NAME            NAMESPACE       REVISION        UPDATED                         
 my-release      kafka           1               2021-01-06 22:12:07.138654803 -0600 CST deployed        kafka-12.5.0    2.7.0
 ```
 
-To uninstall the Kafka helm chart, use the helm delete command:
+To uninstall the Kafka Helm Chart, use the helm delete command:
 
 ```execute
 helm delete my-release -n kafka
