@@ -1,7 +1,7 @@
 {
   "name": "Kafka Helm Chart",
   "description": "Kafka Bitnami Helm Chart",
-  "logo": "_images/Custom.png",
+  "logo": "_images/kafka-logo-1.jpg",
   "has_supporting_content": true,
   "stack_id": "kafka-bitnami-chart",
   "type": "Helm",
