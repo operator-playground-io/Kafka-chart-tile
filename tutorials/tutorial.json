@@ -24,7 +24,7 @@
          "title":"3: Configuration Parameters of Kafka Helm Chart"
       },
       {
-         "description":" How to Upgrade and Rollback kafka helm chart",
+         "description":" How to Upgrade and Rollback Kafka Helm Chart",
          "duration":"5 min",
          "tutorial_name":"upgrading-and-rollback-kafka.md",
          "title":"4: Upgrade and Rollback Kafka Helm Chart"
