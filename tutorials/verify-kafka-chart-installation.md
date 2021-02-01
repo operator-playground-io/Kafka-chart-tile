@@ -27,9 +27,9 @@ my-release-zookeeper-0   0/1     ContainerCreating   0          16s
 It may take few minutes to change the `STATUS` from `ContainerCreating` to `Running`. 
 
 ```output
-NAME                         READY   STATUS    RESTARTS   AGE
-my-release-kafka-0       1/1     Running   0          61s
-my-release-zookeeper-0   1/1     Running   0          61s
+NAME                     READY   STATUS    RESTARTS   AGE
+my-release-kafka-0       1/1     Running   0          60s
+my-release-zookeeper-0   1/1     Running   0          60s
 ```
 
 Once the `kafka` and `zookeeper`PODs are up and running , and `READY` states are `1/1` for both, your Kafka is ready to use.
