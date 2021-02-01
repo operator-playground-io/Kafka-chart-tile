@@ -8,9 +8,9 @@ Once the helm chart installation done you need to verify all the pods and servic
 
 Execute below command to check status of pods and services: 
 
-### Check the pod status
+### Check the pods status
 
-Execute the below command to know status of podss inside the namespace `kafka`:
+Execute the below command to know status of pods inside the namespace `kafka`:
 
 ```execute
 kubectl get pods --namespace kafka
@@ -28,8 +28,8 @@ It may take few minutes to change the `STATUS` from `ContainerCreating` to `Runn
 
 ```output
 NAME                         READY   STATUS    RESTARTS   AGE
-pod/my-release-kafka-0       1/1     Running   0          61s
-pod/my-release-zookeeper-0   1/1     Running   0          61s
+my-release-kafka-0       1/1     Running   0          61s
+my-release-zookeeper-0   1/1     Running   0          61s
 ```
 
 Once the `kafka` and `zookeeper`PODs are up and running , and `READY` states are `1/1` for both, your Kafka is ready to use.
@@ -43,7 +43,7 @@ You can execute the following command to know status of all the deployed resourc
 kubectl get all --namespace kafka
 ```
 
-All the pod `STATUS` should be `Running` and `READY` states should be `1/1`.
+All the pods' `STATUS` should be `Running` and `READY` states should be `1/1`.
 
 ```
 NAME                         READY   STATUS    RESTARTS   AGE
