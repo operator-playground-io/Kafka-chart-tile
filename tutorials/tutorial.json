@@ -16,7 +16,12 @@
          "tutorial_name":"create-test-client.md",
          "title":"2: Deploy Test Client for Kafka"
       },
-
+      {
+         "description":"Sample application using Kafka",
+         "duration":"10 min",
+         "tutorial_name":"messages-application.md",
+         "title":"4: Kafka Sample Application"
+      },
       {
          "description":" Detailed description of Configuration Parameters of Kafka Helm Chart",
          "duration":"5 min",
