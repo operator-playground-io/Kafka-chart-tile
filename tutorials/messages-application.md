@@ -25,13 +25,14 @@ The code stucture follows a simple modular and MVC pattern. There are 3 folders 
 
 **Step 1: Perform the following steps described in the tutorials.**
 
-	- Install the Kafka cluster.
-    - Check that Kafka cluster is installed and running
+*  Install the Kafka cluster.
+
+*  Check that Kafka cluster is installed and running
 
 Once you complete the above steps, proceed with following steps to execute the sample application.
 
 
-**Step 2: Install the sample application.
+**Step 2: Install the sample application.**
 
 - Get the sample code.
 
