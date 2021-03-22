@@ -59,4 +59,6 @@ statefulset.apps/my-release-kafka       1/1     65m
 statefulset.apps/my-release-zookeeper   1/1     65m
 ```
 
+### Conclusion
+
 This way, you can easily verify the configuration status of Kafka pods and other deployed resources.

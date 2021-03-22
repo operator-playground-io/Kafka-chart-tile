@@ -8,7 +8,7 @@ description: How to deploy a test client that will execute scripts against the K
 
 Now you are going to deploy a test client that will execute scripts against the Kafka cluster.
 
-**Step 1:** Execute the command below to create `testclient.yaml`:
+**Step 1: Execute the command below to create `testclient.yaml`.**
 
 ```execute
 cat <<'EOF' > testclient.yaml
@@ -27,13 +27,13 @@ spec:
 EOF
 ```
 
-**Step 2:** Execute the following command to create the client:
+**Step 2: Execute the following command to create the client.**
 
 ```execute
 kubectl -n kafka apply -f testclient.yaml
 ```
 
-**Step 3:** Now check if the `testclient` Pod is up and running by executing following the below command:
+**Step 3: Now check if the `testclient` Pod is up and running by executing following the below command.**
 
 ```execute
 kubectl get pods -n kafka
@@ -48,7 +48,7 @@ my-release-zookeeper-0   1/1     Running   0          65m
 testclient               1/1     Running   0          56m
 ```
 
-**Step 4:** Now using the `testclient`, you will create the first `topic` “messages”, with one partition, and replication factor ‘1’.
+**Step 4: Now using the `testclient`, you will create the first topic “messages”, with one partition, and replication factor ‘1’.**
 
 ```execute
 kubectl -n kafka exec -it testclient -- ./bin/kafka-topics.sh --zookeeper my-release-zookeeper:2181 --topic messages --create --partitions 1 --replication-factor 1
@@ -62,41 +62,41 @@ See the below output.
 Created topic "messages".
 ```
 
-**NOTE:** For successful execution, you need to use the correct hostname for zookeeper cluster and the topic configuration.
+**NOTE: For successful execution, you need to use the correct hostname for zookeeper cluster and the topic configuration.**
 
-Now to send and receive the messages you will need to have two terminals. Let's get that using our`Developer Dashboard` tab. 
+Now to send and receive the messages you will need to have two terminals. Let's get that using our `Developer Dashboard` tab. 
 
 ### Get Multiple Terminals
 
-**Step 1:** Click on the `Developer Dashboard` tab on top.
+**Step 1: Click on the `Developer Dashboard` tab on top.**
 
 ![](_images/developer-dashboard.png)
 
 It will open a Visual Studio Code Editor.
 
-**Step 2:** Click on Menu --> View --> Terminal
+**Step 2: Click on Menu --> View --> Terminal**
 
 ![](_images/terminal.png)
 
 
 
-**Step 3:** Click on the `+` button at right top corner of your terminal to get another terminal.
+**Step 3: Click on the `+` button at right top corner of your terminal to get another terminal.**
 
  ![](_images/add-terminal.png)
 
-**Step 4:** Choose `code-server` as the terminal option.
+**Step 4: Choose `code-server` as the terminal option.**
 
 ![](_images/code-server.png)
 
 
 
-**Step 5:** Now you will have two terminals where you can switch.
+**Step 5: Now you will have two terminals where you can switch.**
 
 ![](_images/terminal-switch.png)
 
 ### Send and Receive Messages
 
-**NOTE:**  Before executing `kubectl` commands, you need to disable network logs on Kubernetes.Copy and execute the below command in both terminals:
+**NOTE:  Before executing `kubectl` commands, you need to disable network logs on Kubernetes.Copy and execute the below command in both terminals.**
 
 ```
 unset DEBUG

@@ -24,7 +24,7 @@ A high-level Kafka Architectural flow is as shown below:
 
 ![](_images/kafka-architecture.png)
 
-**Kafka Brokers :**
+**Kafka Brokers:**
 
 A Kafka broker is a server running in a Kafka cluster (or, a Kafka cluster is made up of several brokers). Typically, multiple brokers work in concert to form the Kafka cluster and achieve load balancing and reliable redundancy and failover. 
 

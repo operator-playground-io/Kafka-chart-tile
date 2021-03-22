@@ -11,7 +11,7 @@ description: How to Upgrade and Rollback Kafka helm chart?
 
 It is very important to keep Kafka Helm Chart updated. To upgrade Kafka Helm Chart, please follow the below steps:
 
-**Step 1:** To list all of your current releases in namespace "kafka", run the following command:
+**Step 1: To list all of your current releases in namespace "kafka", run the following command.**
 
 ```execute
 helm list -n kafka
@@ -27,7 +27,7 @@ As you can see from the output, our current Kafka (my-release) version is 2.7.0 
 
 Refer the steps below to get started.
 
-**Step 2:** Update your Helm repositories using the following command:
+**Step 2: Update your Helm repositories using the following command.**
 
 ```execute
 helm repo update 
@@ -42,7 +42,7 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈
 ```
 
-**Step 3:** Check if there’s a newer version of the Kafka chart available through the following command:
+**Step 3: Check if there’s a newer version of the Kafka chart available through the following command.**
 
 ```execute
 helm search repo kafka --versions
@@ -87,7 +87,7 @@ bitnami/kafka   11.6.5          2.5.0           Apache Kafka is a distributed st
 
 As you can see from the output, there’s a new chart available (version 12.5.0) with Kafka 2.7.0 (app version). 
 
-**Step 4:** To upgrade your Kafka release to the latest Kafka chart, execute below command:
+**Step 4: To upgrade your Kafka release to the latest Kafka chart, execute below command.**
 
 ```execute
 helm upgrade my-release bitnami/kafka --namespace kafka
@@ -133,7 +133,7 @@ To create a Pod that you can use as a Kafka client run the following commands:
             --from-beginning
 ```
 
-**Step 5:** Check for the updated information about your release using `helm list` command.
+**Step 5: Check for the updated information about your release using `helm list` command.**
 
 ```execute
 helm list -n kafka
@@ -165,5 +165,7 @@ The output should look like this.
 ```output
 Rollback was a success! Happy Helming!
 ```
+
+### Conclusion
 
 This would roll back the updated Kafka setup to its previous release.
