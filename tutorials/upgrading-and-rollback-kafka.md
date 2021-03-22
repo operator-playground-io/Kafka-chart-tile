@@ -1,37 +1,33 @@
 ---
-title: How to Upgrade and Rollback Kafka chart 
-description: This tutorial explains how to Upgrade and Rollback Kafka helm chart
+title: Upgrade and Rollback Kafka chart 
+description: How to Upgrade and Rollback Kafka helm chart?
 ---
 
 
 
 ### Upgrading Kafka
 
-It is also important to keep Kafka Helm Chart updated. 
+**NOTE: At the time of creation of this tutorial, the Kafka chart version was kafka-12.5.0. This may change with updates.**
 
-**NOTE: At the time of creation of this tutorial the Kafka chart version is kafka-12.5.0. This may change with updates**
+It is very important to keep Kafka Helm Chart updated. To upgrade Kafka Helm Chart, please follow the below steps:
 
-To Upgrade Kafka Helm Chart,please execute following steps:
-
-**Step 1:** To list all of your current releases in namespace "kafka", run the following command :
+**Step 1:** To list all of your current releases in namespace "kafka", run the following command:
 
 ```execute
 helm list -n kafka
 ```
-You should get output similar to this:
+You should get output like this:
 
-Output:
-```
+```output
 NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
 my-release      kafka           1               2021-01-09 12:29:50.150704347 -0600 CST deployed        kafka-12.5.0    2.7.0  
 ```
 
-As you can see from the output, our current Kafka (my-release) version is 2.7.0 (app version), while the chart version is 12.5.0 which is the latest one.
-But suppose your current helm chart version is 12.4.0 and app version is 2.6.0 and is not updated one and you need to upgrade it. 
+As you can see from the output, our current Kafka (my-release) version is 2.7.0 (app version), while the chart version is 12.5.0 which is the latest one. But suppose your current helm chart version is 12.4.0 and app version is 2.6.0, and it’s not updated, then you should upgrade it on priority.
 
-You need to follow below steps.
+Refer the steps below to get started.
 
-**Step 2:** Update your Helm repositories with following command :
+**Step 2:** Update your Helm repositories using the following command:
 
 ```execute
 helm repo update 
@@ -46,13 +42,13 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈
 ```
 
-**Step 3:** Check if there’s a newer version of the Kafka chart available using following command:
+**Step 3:** Check if there’s a newer version of the Kafka chart available through the following command:
 
 ```execute
 helm search repo kafka --versions
 ```
 
-You should see output similar to this:
+You should see an output like this:
 
 ```
 NAME            CHART VERSION   APP VERSION     DESCRIPTION
@@ -97,7 +93,7 @@ As you can see from the output, there’s a new chart available (version 12.5.0)
 helm upgrade my-release bitnami/kafka --namespace kafka
 ```
 
-This command will produce output very similar to the output produced by helm install:
+This command will produce the output very similar to the output produced by running helm install command:
 
 ```output
 Release "my-release" has been upgraded. Happy Helming!
@@ -118,7 +114,7 @@ Each Kafka broker can be accessed by producers via port 9092 on the following DN
 
     my-release-kafka-0.my-release-kafka-headless.kafka.svc.cluster.local:9092
 
-To create a pod that you can use as a Kafka client run the following commands:
+To create a Pod that you can use as a Kafka client run the following commands:
 
     kubectl run my-release-kafka-client --restart='Never' --image docker.io/bitnami/kafka:2.7.0-debian-10-r1 --namespace kafka --command -- sleep infinity
     kubectl exec --tty -i my-release-kafka-client --namespace kafka -- bash
@@ -137,37 +133,37 @@ To create a pod that you can use as a Kafka client run the following commands:
             --from-beginning
 ```
 
-**Step 5:** Check updated information about your release using helm list command.
+**Step 5:** Check for the updated information about your release using `helm list` command.
 
 ```execute
 helm list -n kafka
 ```
 
-Output:
+This displays the output as shown:
+
 ```
 NAME            NAMESPACE       REVISION        UPDATED                                 STATUS          CHART           APP VERSION
 my-release      kafka           2               2021-01-09 12:45:13.889656747 -0600 CST deployed        kafka-12.5.0    2.7.0
 ```
 
-You have successfully upgraded your Kafka to the latest version of the Kafka chart.
+Here you go! You have successfully upgraded your Kafka to the latest version of the Kafka chart.
 
 
-### Rolling Back a Release
+### Roll Back a Release
 
-Each time you upgrade a release, a new revision of that release is created by Helm. A revision sets a fixed checkpoint to where you can come back if things don’t work as expected. 
-If something goes wrong during the upgrade process, you can always rollback to a previous revision of a given Helm release with the helm rollback command.
+Each time you upgrade a release, a new revision of that release is created by Helm. A revision sets a fixed checkpoint to where you can come back if things don’t work as expected. If something goes wrong during the upgrade process, you can always `rollback` to a previous revision of the given Helm release.
 
 
-If you want to undo the upgrade and rollback your Kafka release to its previous version, execute the following rollback command:
+- Use the `helm rollback` command if you want to undo the upgrade and rollback your Kafka release to its previous version.
 
 ```execute
 helm rollback my-release 1 -n kafka
 ```
 
-Output:
+The output should look like this.
 
 ```output
 Rollback was a success! Happy Helming!
 ```
 
-This would rollback the Kafka installation to its previous release. 
+This would roll back the updated Kafka setup to its previous release.
