@@ -5,13 +5,13 @@
    "footer":"footer.md",
    "tutorials":[
       {
-         "description":"This tutorial explains how to verify that Kafka chart installed successfully.",
+         "description":"Learn how to verify that Kafka chart installed successfully.",
          "duration":"5 min",
          "tutorial_name":"verify-kafka-chart-installation.md",
          "title":"1. Verify Kafka Chart Installation"
       },
       {
-         "description":"How to deploy a test client that will execute scripts against the Kafka cluster?",
+         "description":"Learn how to deploy a test client that will execute scripts against the Kafka cluster?",
          "duration":"15 min",
          "tutorial_name":"create-test-client.md",
          "title":"2. Deploy Test Client for Kafka"
@@ -29,13 +29,13 @@
          "title":"4. Configuration Parameters of Kafka Helm"
       },
       {
-         "description":"How to Upgrade and Rollback Kafka helm chart?",
+         "description":"Learn how to Upgrade and Rollback Kafka helm chart?",
          "duration":"5 min",
          "tutorial_name":"upgrading-and-rollback-kafka.md",
          "title":"5. Upgrade and Rollback Kafka Chart"
       },
       {
-         "description":"How to uninstall Kafka Helm chart?",
+         "description":"Learn how to uninstall Kafka Helm chart?",
          "duration":"5 min",
          "tutorial_name":"uninstall-helm-chart.md",
          "title":"6. Uninstall Kafka Helm Chart"

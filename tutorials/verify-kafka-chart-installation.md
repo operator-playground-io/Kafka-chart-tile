@@ -1,14 +1,14 @@
 ---
 title: Verify Kafka Chart Installation
-description: This tutorial explains how to verify that Kafka chart installed successfully
+description: Learn how to verify that Kafka chart installed successfully
 ---
 
 
-Once the helm chart installation is complete, you need to verify that all the pods and services are up and running.
+Once the helm chart installation is complete, you need to verify that all the Pods and services are up and running.
 
 ### Check the Status of Pods 
 
-- Execute the following command to know the status of pods inside the namespace `kafka`:
+- Execute the following command to know the status of Pods inside the namespace `kafka`:
 
 ```execute
 kubectl get pods --namespace kafka
@@ -30,7 +30,7 @@ my-release-kafka-0       1/1     Running   0          60s
 my-release-zookeeper-0   1/1     Running   0          60s
 ```
 
-Once the `kafka` and `zookeeper` PODs are up and running , and `READY` states are `1/1` for both, your Kafka is ready to use.
+Once the `kafka` and `zookeeper` Pods are up and running , and `READY` states are `1/1` for both, your Kafka is ready to use.
 
 ### Check the Status of Kubernetes Resources
 
@@ -41,7 +41,7 @@ Once the `kafka` and `zookeeper` PODs are up and running , and `READY` states ar
 kubectl get all --namespace kafka
 ```
 
-Ensure that the STATUS value of pods should be `Running` and `READY` state for each should be `1/1`.
+Ensure that the STATUS value of Pods should be `Running` and `READY` state for each should be `1/1`.
 
 ```
 NAME                         READY   STATUS    RESTARTS   AGE
@@ -61,4 +61,4 @@ statefulset.apps/my-release-zookeeper   1/1     65m
 
 ### Conclusion
 
-This way, you can easily verify the configuration status of Kafka pods and other deployed resources.
+This way, you can easily verify the configuration status of Kafka Pods and other deployed resources.

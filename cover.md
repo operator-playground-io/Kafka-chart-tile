@@ -59,7 +59,7 @@ Within the Kafka cluster, topics are divided into partitions, and the partitions
 In this tutorial,we are going to cover following topics:
 
 - Install Kafka Bitnami Helm Chart and verify its successful installation.
-- Verify the status of pods and services. 
+- Verify the status of Pods and services. 
 - Deploy a test client that will execute scripts against the Kafka cluster.
 - Uninstall Kafka Helm Chart and release resources.
 

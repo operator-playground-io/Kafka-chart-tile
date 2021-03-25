@@ -1,6 +1,6 @@
 ---
 title: Deploy Test Client for Kafka
-description: How to deploy a test client that will execute scripts against the Kafka cluster?
+description: Learn how to deploy a test client that will execute scripts against the Kafka cluster?
 ---
 
 

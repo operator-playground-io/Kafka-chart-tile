@@ -1,6 +1,6 @@
 ---
 title: Upgrade and Rollback Kafka chart 
-description: How to Upgrade and Rollback Kafka helm chart?
+description: Learn how to Upgrade and Rollback Kafka helm chart?
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 title: Uninstall Kafka Helm chart 
-description: How to uninstall Kafka Helm chart?
+description: Learn how to uninstall Kafka Helm chart?
 ---
 
 ### Uninstall Kafka Helm Chart
