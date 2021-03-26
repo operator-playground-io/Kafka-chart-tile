@@ -1,13 +1,13 @@
 ---
-title: Configuration Parameters of Kafka Helm Chart
-description: This tutorial explains about Configuration Parameters
+title: Configuration Parameters of Kafka Helm
+description: Describing Configuration Parameters of Bitnami Kafka Helm
 ---
 
 
-### Configuration Parameters of Kafka Helm Chart
+### Configuration Parameters
 
 The Kafka Helm Chart can be customized by specifying configurable parameters while installing the chart.
 
-The detailed description of these lists of configurable parameters for Kafka Helm Chart with their default values per section/component can be checked at "Parameters" section of following link:
+You can check “Parameters” section to get the detailed description of these lists of configurable parameters for Kafka Helm Chart with their default values per section/component. Refer the link below.
 
 https://github.com/bitnami/charts/tree/master/bitnami/kafka

@@ -5,40 +5,40 @@
    "footer":"footer.md",
    "tutorials":[
       {
-         "description":" How to verify chart is installed successfully.",
+         "description":"Learn how to verify that Kafka chart installed successfully.",
          "duration":"5 min",
          "tutorial_name":"verify-kafka-chart-installation.md",
-         "title":"1: Verify Chart Installation is successful"
+         "title":"1. Verify Kafka Chart Installation"
       },
       {
-         "description":"How to deploy a test client that will execute scripts against the Kafka cluster",
+         "description":"Learn how to deploy a test client that will execute scripts against the Kafka cluster?",
          "duration":"15 min",
          "tutorial_name":"create-test-client.md",
-         "title":"2: Deploy Test Client for Kafka"
+         "title":"2. Deploy Test Client for Kafka"
       },
       {
          "description":"Sample application using Kafka",
          "duration":"10 min",
          "tutorial_name":"messages-application.md",
-         "title":"4: Kafka Sample Application"
+         "title":"3. Kafka Sample Application"
       },
       {
-         "description":" Detailed description of Configuration Parameters of Kafka Helm Chart",
+         "description":"Describing Configuration Parameters of Bitnami Kafka Helm",
          "duration":"5 min",
          "tutorial_name":"configuration-parameters-of-kafka-helm-chart.md",
-         "title":"3: Configuration Parameters of Kafka Helm Chart"
+         "title":"4. Configuration Parameters of Kafka Helm"
       },
       {
-         "description":" How to Upgrade and Rollback Kafka Helm Chart",
+         "description":"Learn how to Upgrade and Rollback Kafka helm chart?",
          "duration":"5 min",
          "tutorial_name":"upgrading-and-rollback-kafka.md",
-         "title":"4: Upgrade and Rollback Kafka Helm Chart"
+         "title":"5. Upgrade and Rollback Kafka Chart"
       },
       {
-         "description":" How to uninstall Helm Chart",
+         "description":"Learn how to uninstall Kafka Helm chart?",
          "duration":"5 min",
          "tutorial_name":"uninstall-helm-chart.md",
-         "title":"5: Uninstall Kafka Helm Chart"
+         "title":"6. Uninstall Kafka Helm Chart"
       }
       
    ],
