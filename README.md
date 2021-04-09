@@ -1,1 +1,1 @@
-# Kafka Helm Chart
+# Kafka Helm Chart from Bitnami
