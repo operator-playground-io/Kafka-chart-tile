@@ -43,7 +43,7 @@ cd /home/student/projects && git clone https://github.com/operator-playground-io
 - Navigate to the example.
 
 ```execute
-cd edge-kafka-sample
+cd kafka-sample
 ```
 
 - Set the Kafka instance.
