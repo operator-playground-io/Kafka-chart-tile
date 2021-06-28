@@ -37,7 +37,7 @@ Once you complete the above steps, proceed with following steps to execute the s
 - Get the sample code.
 
 ```execute
-cd /home/student/projects && git clone https://github.com/Andi-Cirjaliu/edge-kafka-sample.git
+cd /home/student/projects && git clone https://github.com/operator-playground-io/kafka-sample.git
 ```
 
 - Navigate to the example.
