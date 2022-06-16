@@ -17,12 +17,6 @@
          "title":"2. Deploy Test Client for Kafka"
       },
       {
-         "description":"Sample application using Kafka",
-         "duration":"10 min",
-         "tutorial_name":"messages-application.md",
-         "title":"3. Kafka Sample Application"
-      },
-      {
          "description":"Describing Configuration Parameters of Bitnami Kafka Helm",
          "duration":"5 min",
          "tutorial_name":"configuration-parameters-of-kafka-helm-chart.md",
