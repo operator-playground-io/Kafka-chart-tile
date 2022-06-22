@@ -37,7 +37,8 @@ Once you complete the above steps, proceed with following steps to execute the s
 - Get the sample code.
 
 ```execute
-cd /home/student/projects && git clone https://github.com/operator-playground-io/kafka-sample.git
+mkdir -p /home/student/code-server/kafka-chart
+cd /home/student/code-server/kafka-chart && git clone https://github.com/operator-playground-io/kafka-sample.git
 ```
 
 - Navigate to the example.
@@ -49,7 +50,7 @@ cd kafka-sample
 - Set the Kafka instance.
 
 ```execute
-export ip_addr=$(ifconfig eth1 | grep inet | awk '{print $2}' | cut -f2 -d:)
+export ip_addr=$(ifconfig eth0 | grep inet | awk '{print $2}' | cut -f2 -d:)
 ```
 ```execute
 sed -i "s/host-address/$ip_addr/" ./frontend/.env
@@ -79,7 +80,7 @@ skaffold dev
 
 Follow the below URL: 
 
-http://##DNS.ip##:30501
+http://##SSH.host##:30501
 
 
 ### Deploy the changes to Kubernetes in Dev Mode
