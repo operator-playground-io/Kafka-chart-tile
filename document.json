@@ -20,7 +20,7 @@
         ]
   },
 "deployment_information": {
-  "Project": "/home/student/projects/kafka-chart-yamls",
+  "Project": "/home/student/code-server/kafka-chart-yamls",
   "Deployment Namespace": "kafka"
 },
  "commands": [
@@ -34,7 +34,7 @@
     },
     {
       "description": "Clone and Prepare ",
-      "exec": "cd /home/student/projects && git clone https://github.com/operator-playground-io/kafka-chart-yamls.git && cd kafka-chart-yamls && kubectl create -f pv-kafka.yaml && kubectl create -f pv-zookeeper.yaml"
+      "exec": "cd /home/student/code-server && git clone https://github.com/operator-playground-io/kafka-chart-yamls.git && cd kafka-chart-yamls && kubectl create -f pv-kafka.yaml && kubectl create -f pv-zookeeper.yaml"
     },
     {
       "description": "Add Bitnami Repo",
